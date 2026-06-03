@@ -1,6 +1,6 @@
 #+options: toc:nil
 
-* Property Onboard with Terraform
+* Akamai Delivery Property Onboard with Terraform
 
 ** Path Structure
 #+begin_example
@@ -16,5 +16,5 @@
 #+end_example
 
 ** Use
-- Init terraform inside delivery path
-- Run other terraform commands inside this path
+- Init terraform inside "delivery" path
+- Run other terraform commands inside "delivery" path.
