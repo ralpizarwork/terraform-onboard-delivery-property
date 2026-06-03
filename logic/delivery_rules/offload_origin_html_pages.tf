@@ -1,0 +1,20 @@
+
+data "akamai_property_rules_builder" "rule_html_pages" {
+  rules_v2026_02_16 {
+    name                  = "HTML pages"
+    comments              = "Override the default caching behavior for HTML pages cached on edge servers."
+    criteria_must_satisfy = "all"
+    criterion {
+      file_extension {
+        match_case_sensitive = false
+        match_operator       = "IS_ONE_OF"
+        values               = ["html", "htm", "php", "jsp", "aspx", "EMPTY_STRING", ]
+      }
+    }
+    behavior {
+      caching {
+        behavior = "NO_STORE"
+      }
+    }
+  }
+}

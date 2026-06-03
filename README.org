@@ -1,0 +1,20 @@
+#+options: toc:nil
+
+* Property Onboard with Terraform
+
+** Path Structure
+#+begin_example
+.
+├── delivery                  -> Delivery onboard code
+├── logic                     -> Terraform module with rules logic
+│   └── delivery_rules
+└── modules                   -> Terraform modules to configure Akamai platform
+    ├── dns
+    ├── enrollment
+    ├── property
+    └── validation
+#+end_example
+
+** Use
+- Init terraform inside delivery path
+- Run other terraform commands inside this path
