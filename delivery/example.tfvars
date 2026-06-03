@@ -25,6 +25,9 @@ contact_emails = [
   "emailr@gmail.com"
 ]
 
+# This allows Akamai persone to push Akamai properties into internal accounts
+compliance_reason = "no_production_traffic"
+
 # Certifiate
 cert_contact_details = {
   first_name       = "Alice"

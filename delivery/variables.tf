@@ -53,6 +53,11 @@ variable "property_notes" {
   description = "Property version notes"
 }
 
+variable "compliance_reason" {
+  type = string
+  description = "Required when Akamai employee push test properties to production under internal account without PR"
+}
+
 # Certificates
 variable "cert_contact_details" {
   type = object({

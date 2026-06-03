@@ -34,7 +34,7 @@ module "property" {
   enrollment_id     = module.enrollment.enrollment_id
   contact_emails    = var.contact_emails
   version_notes     = var.property_notes
-  compliance_record = {reason = "no_production_traffic"}
+  compliance_record = {reason = var.compliance_reason}
 }
 
 output "cp_code" {
