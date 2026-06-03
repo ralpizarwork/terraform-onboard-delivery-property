@@ -54,7 +54,7 @@ variable "property_notes" {
 }
 
 variable "compliance_reason" {
-  type = string
+  type        = string
   description = "Required when Akamai employee push test properties to production under internal account without PR"
 }
 
