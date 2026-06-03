@@ -1,5 +1,5 @@
 locals {
-  secure_network = var.enhanced_tls == true ? "enhanced-tls" : "standard-tls"
+  secure_network = "enhanced-tls"
 }
 
 module "enrollment" {

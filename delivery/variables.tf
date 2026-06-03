@@ -23,12 +23,6 @@ variable "product_id" {
   default = "Fresca"
 }
 
-variable "enhanced_tls" {
-  type        = bool
-  default     = true
-  description = "Whether to deploy the certificate on the enhanced TLS network"
-}
-
 variable "origin_server" {
   type        = string
   description = "Origin server hostname"
