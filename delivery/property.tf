@@ -15,7 +15,7 @@ resource "akamai_cp_code" "delivery_cp_code" {
 }
 
 module "delivery_rules" {
-  source = "../logic/delivery_rules"
+  source = "../logic_module/delivery_rules"
 
   origin_server                           = var.origin_server
   cp_code_id                              = akamai_cp_code.delivery_cp_code.id
