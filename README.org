@@ -7,14 +7,24 @@
 .
 ├── delivery                  -> Delivery onboard code
 ├── logic                     -> Terraform module with rules logic
-│   └── delivery_rules
+│   └── delivery_rules           -> Property manager logic rules
 └── modules                   -> Terraform modules to configure Akamai platform
-    ├── dns
-    ├── enrollment
-    ├── property
-    └── validation
+    ├── dns                      -> Akamai EdgeDNS
+    ├── enrollment               -> Akamai CPS DV certificate
+    ├── property                 -> Akamai Property manager
+    └── validation               -> Akamai CPS certificate validation
 #+end_example
 
 ** Use
 - Init terraform inside "delivery" path
 - Run other terraform commands inside "delivery" path.
+
+** WorkFlow
+1. Create cpcode based on property name.
+2. Create enrollment for DV certificate.
+3. Create edgehostnames enhanced-tls.
+4. Create delivery property.
+5. Push to Akamai staging and production.
+
+** Rererences
+[[https://github.com/akamai/terraform-examples][GitHub Akamai Terraform Examples]]
