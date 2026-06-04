@@ -28,6 +28,18 @@ variable "origin_server" {
   description = "Origin server hostname"
 }
 
+variable "origin_leaf_certificate_sha1fingerprint" {
+  type        = string
+  default     = null
+  description = "Leaf certificate to pin sha1 fingerprint"
+}
+
+variable "origin_leaf_certificate_pem" {
+  type        = string
+  default     = null
+  description = "Leaf certificate to pin pem format"
+}
+
 variable "property_name" {
   type        = string
   description = "Akamai property hostname only. First part of FQDN"
@@ -58,7 +70,7 @@ variable "compliance_reason" {
   description = "Required when Akamai employee push test properties to production under internal account without PR"
 }
 
-# Certificates
+# CPS Certificates
 variable "cert_contact_details" {
   type = object({
     first_name       = string
