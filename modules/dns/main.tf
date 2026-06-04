@@ -3,7 +3,7 @@ locals {
 }
 
 resource "akamai_dns_record" "validations" {
-  for_each = toset(var.hostnames)
+  for_each = var.challenges
 
   zone       = var.zone
   name       = local.challenge_found ? var.challenges[each.key].full_path : "record-safe-to-delete.${var.zone}"
