@@ -6,7 +6,7 @@
 #+begin_example
 .
 ├── delivery                  -> Delivery onboard code
-├── logic                     -> Terraform module with rules logic
+├── logic_module              -> Terraform module with logic rules
 │   └── delivery_rules           -> Property manager logic rules
 └── modules                   -> Terraform modules to configure Akamai platform
     ├── dns                      -> Akamai EdgeDNS
