@@ -15,7 +15,7 @@ resource "akamai_cp_code" "delivery_cp_code" {
 }
 
 module "delivery_rules" {
-  source = "../logic_module/delivery_rules"
+  source = "./logic_module/delivery_rules"
 
   origin_server                           = var.origin_server
   cp_code_id                              = akamai_cp_code.delivery_cp_code.id
@@ -24,7 +24,7 @@ module "delivery_rules" {
 }
 
 module "property" {
-  source = "../modules/property"
+  source = "./modules/property"
 
   contract_id       = var.contract_id
   group_id          = local.group_id

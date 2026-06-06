@@ -3,7 +3,7 @@ locals {
 }
 
 module "enrollment" {
-  source = "../modules/enrollment"
+  source = "./modules/enrollment"
 
   contract_id           = var.contract_id
   common_name           = local.property_hostnames_fqdn[0]
@@ -16,7 +16,7 @@ module "enrollment" {
 }
 
 module "dns" {
-  source = "../modules/dns"
+  source = "./modules/dns"
 
   zone       = var.dns_zone
   challenges = module.enrollment.dns_challenges
@@ -30,7 +30,7 @@ resource "time_sleep" "wait_dns_challenge" {
 }
 
 module "validation" {
-  source = "../modules/validation"
+  source = "./modules/validation"
 
   enrollment_id = module.enrollment.enrollment_id
   hostnames     = module.dns.hostnames
