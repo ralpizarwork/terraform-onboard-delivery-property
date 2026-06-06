@@ -13,9 +13,9 @@ variable "contract_id" {
   description = "Akamai contract ID"
 }
 
-variable "group_id" {
+variable "group_name" {
   type        = string
-  description = "Akamai group ID"
+  description = "Akamai group Name"
 }
 
 variable "product_id" {

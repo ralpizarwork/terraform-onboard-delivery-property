@@ -7,7 +7,7 @@ locals {
 resource "akamai_cp_code" "delivery_cp_code" {
   name        = local.cp_code_name
   contract_id = var.contract_id
-  group_id    = var.group_id
+  group_id    = local.group_id
   product_id  = var.product_id
   timeouts {
     update = "1h"
@@ -27,7 +27,7 @@ module "property" {
   source = "../modules/property"
 
   contract_id       = var.contract_id
-  group_id          = var.group_id
+  group_id          = local.group_id
   product_id        = var.product_id
   name              = var.property_name
   hostnames         = local.property_hostnames_fqdn

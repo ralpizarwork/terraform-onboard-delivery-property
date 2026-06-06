@@ -4,7 +4,7 @@ edgerc_section = "default"
 
 # Account Information
 contract_id = "1-XXXXXX"
-group_id    = "12345"
+group_name  = "your_group_name"
 
 # Akamai property setup
 property_notes = "Terraform property version"
