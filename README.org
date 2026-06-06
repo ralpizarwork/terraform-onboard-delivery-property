@@ -19,7 +19,7 @@ Akamai delivery property onboard code.
 
 ** Use
 1. Setup you Akamai API credentials
-2. Create terraform.Tfvars File
+2. Create terraform.tfvars file (example.tfvars as reference)
 3. Run: terraform Init
 4. Run: terraform Plan
 5.  Run: terraform Apply
