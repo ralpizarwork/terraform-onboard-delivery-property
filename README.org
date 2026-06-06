@@ -4,8 +4,7 @@
 
 ** Path Structure
 #+begin_example
-.
-├── delivery                  -> Delivery onboard code
+.                             -> Delivery onboard code
 ├── logic_module              -> Terraform module with logic rules
 │   └── delivery_rules           -> Property manager logic rules
 └── modules                   -> Terraform modules to configure Akamai platform
@@ -15,9 +14,21 @@
     └── validation               -> Akamai CPS certificate validation
 #+end_example
 
+** Introduction
+Akamai delivery property onboard code.
+
 ** Use
-- Init terraform inside "delivery" path
-- Run other terraform commands inside "delivery" path.
+1. Setup you Akamai API credentials
+2. Create terraform.Tfvars File
+3. Run: terraform Init
+4. Run: terraform Plan
+5.  Run: terraform Apply
+
+** Import (if resources exists)
+- Enrollment (Certificate)
+- Cpcode
+- Edgehostnames
+- Property
 
 ** WorkFlow
 1. Create cpcode based on property name.
@@ -28,3 +39,5 @@
 
 ** Rererences
 [[https://github.com/akamai/terraform-examples][GitHub Akamai Terraform Examples]]
+[[https://terraform.aka-dev.net/][Terraform Training Github]]
+[[https://techdocs.akamai.com/terraform/][Akamai Terraform Documentation - TechDocs]]
