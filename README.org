@@ -38,6 +38,6 @@ Akamai delivery property onboard code.
 5. Push to Akamai staging and production.
 
 ** Rererences
-[[https://github.com/akamai/terraform-examples][GitHub Akamai Terraform Examples]]
-[[https://terraform.aka-dev.net/][Terraform Training Github]]
-[[https://techdocs.akamai.com/terraform/][Akamai Terraform Documentation - TechDocs]]
+1. [[https://github.com/akamai/terraform-examples][GitHub Akamai Terraform Examples]]
+2. [[https://terraform.aka-dev.net/][Terraform Training Github]]
+3. [[https://techdocs.akamai.com/terraform/][Akamai Terraform Documentation - TechDocs]]
