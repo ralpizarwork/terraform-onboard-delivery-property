@@ -6,5 +6,5 @@ data "akamai_group" "group" {
 }
 
 locals {
-  group_id = trimprefix(data.akamai_group.group.id, "grpid_")
+  group_id = trimprefix(data.akamai_group.group.id, "grp_")
 }
